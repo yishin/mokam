@@ -37,6 +37,8 @@ export const convertToJsonFromAndroid = function(theObj) {
   });
 
   console.log(JSON.stringify(rslt, null, 2)); // 포맷에 맞게 출력.
+  console.log('use :  console.log(JSON.stringify(rslt, null, 2)); // 포맷에 맞게 출력. ');
+  return rslt;
   /*  Output
   {
     "app_name": "MOIN",

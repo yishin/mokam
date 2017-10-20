@@ -11,7 +11,7 @@ import {
   Text,
   View
 } from 'react-native';
-import RNMokam, { keymap } from 'mokam';
+import RNMokam, { keymap, convertToJsonFromAndroid } from 'mokam';
 
 const strr =  `
 'atom-text-editor':
@@ -22,6 +22,29 @@ const strr =  `
   'cmd-k cmd-u': 'window:focus-pane-above'
   'cmd-k cmd-n': 'window:focus-pane-below'
 `;
+
+const andrStrObj = {
+  	"resources": {
+  		"string": [
+  			{
+  				"_name": "app_name",
+  				"__text": "MOIN"
+  			},
+  			{
+  				"_name": "update",
+  				"__text": "업데이트"
+  			},
+  			{
+  				"_name": "update_is_necessary",
+  				"__text": "현 업데이트는 필수입니다. 업데이트 후 사용해주세요."
+  			},
+  			{
+  				"_name": "later",
+  				"__text": "다음에 하기"
+  			}
+      ],
+    }
+  };
 
 export default class rnExample extends Component {
   render() {
@@ -38,8 +61,17 @@ export default class rnExample extends Component {
           Press Cmd+R to reload,{'\n'}
           Cmd+D or shake for dev menu
         </Text>
+        <Text
+          onPress={() => this.convertTest()}
+          >
+            Convert Test
+        </Text>
       </View>
     );
+  }
+
+  convertTest() {
+    convertToJsonFromAndroid(andrStrObj);
   }
 }
 

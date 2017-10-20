@@ -1,7 +1,7 @@
 
 {
   "name": "mokam",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "MOKAM Mokadung",
   "main": "index.js",
   "scripts": {
