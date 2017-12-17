@@ -1,3 +1,5 @@
 rootProject.name = 'rnExample'
+include ':mokam'
+project(':mokam').projectDir = new File(rootProject.projectDir, '../node_modules/mokam/android')
 
 include ':app'
