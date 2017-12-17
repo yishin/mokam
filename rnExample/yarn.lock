@@ -3376,9 +3376,8 @@ minimist@~0.0.1:
   dependencies:
     minimist "0.0.8"
 
-mokam@0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/mokam/-/mokam-0.0.6.tgz#44b10c7bbea50d33d8c8c2f85def8b54a1bdf7fe"
+"mokam@file:..":
+  version "0.1.0"
 
 morgan@~1.6.1:
   version "1.6.1"
