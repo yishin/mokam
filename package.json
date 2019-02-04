@@ -1,14 +1,15 @@
-
 {
   "name": "mokam",
-  "version": "0.1.0",
+  "version": "0.2.2",
   "description": "MOKAM Mokadung",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native", "react", "mokadung"
+    "react-native",
+    "react",
+    "mokadung"
   ],
   "author": "mokadung",
   "license": "MIT",

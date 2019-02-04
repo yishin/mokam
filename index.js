@@ -1,8 +1,8 @@
-
-import { NativeModules } from 'react-native';
+import { NativeModules } from "react-native";
 
 const { RNMokam } = NativeModules;
 
-export * from './src/utils';
+export * from "./src/utils";
+export * from "./src/rnStyle";
 
 export default RNMokam;
