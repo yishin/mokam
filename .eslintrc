@@ -1,0 +1,69 @@
+{
+  "extends": "airbnb",
+  "plugins": ["babel", "react", "react-native", "jsx-a11y"],
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+  "rules": {
+    "camelcase": "off",
+    "func-names": ["error", "as-needed"],
+    "function-paren-newline": "off",
+    "global-require": "off",
+    "guard-for-in": "off",
+    "import/extensions": "off",
+    "import/first": "off",
+    "import/no-unresolved": "off",
+    "import/prefer-default-export": "off",
+    "jsx-a11y/href-no-hash": "off",
+    "lines-between-class-members":"off",
+    "max-len": [2, { "code": 120, "comments": 140 }],
+    "no-restricted-syntax": "off",
+    "no-console": "off",
+    "no-mixed-operators": "off",
+    "no-nested-ternary": "off",
+    "no-return-assign": "off",
+    "no-undef": "warn",
+    "no-plusplus": "warn",
+    "no-sparse-arrays": "off",
+    "no-underscore-dangle": "off",
+    "no-unused-vars": "warn",
+    "no-use-before-define": "off",
+    "one-var": "off",
+    "object-curly-newline": "off",
+    "object-property-newline": "off",
+    "one-var-declaration-per-line": "off",
+    "radix": "off",
+    "react/destructuring-assignment": "off",
+    "react/prop-types": "off",
+    "react/sort-comp": "off",
+    "react/jsx-closing-tag-location": "off",
+    "react/jsx-no-bind": "off",
+    "react/forbid-prop-types": ["off"],
+    "react/prefer-stateless-function": ["off"],
+    "react/jsx-filename-extension": "off",
+    "react/jsx-first-prop-new-line": ["off"],
+    "react/jsx-max-props-per-line": [
+      "off",
+      { "maximum": 20, "when": "always" }
+    ],
+    "class-methods-use-this": [
+      "off",
+      { "exceptMethods": ["render", "componentWillMount"] }
+    ],
+    "valid-jsdoc": "off",
+    "require-jsdoc": [
+      "error",
+      {
+        "require": {
+          "FunctionDeclaration": false,
+          "MethodDefinition": false,
+          "ClassDeclaration": true
+        }
+      }
+    ]
+  }
+}

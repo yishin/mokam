@@ -1,6 +1,6 @@
 {
   "name": "mokam",
-  "version": "0.2.2",
+  "version": "0.3.1",
   "description": "MOKAM Mokadung",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,10 @@
   ],
   "author": "mokadung",
   "license": "MIT",
+  "devDependencies": {
+    "eslint": "5.9.0",
+    "eslint-config-airbnb": "17.1.0"
+  },
   "peerDependencies": {
     "react-native": ">=0.47"
   }

@@ -17,6 +17,7 @@ export const centering = { justifyContent: "center", alignItems: "center" };
 export const textCenter = { textAlign: "center" };
 // <View style={{ flexDirection: 'row', ...bottomLine('#DDD4') }}>
 export const bottomLine = col => ({ borderBottomWidth: 1, borderColor: col });
+export const border = col => ({ borderWidth: 1, borderColor: col });
 
 /** Drop to Integer */
 export const srInt = dim => parseInt(dim * sr);

@@ -11,6 +11,17 @@
 
 `sr : screen ratio in react native screen. Ratio to 360 x 640`
 
+### HOC, Components
+
+```
+<Space w={10} />
+ButtonCenter(props)
+ViewCenter(props)
+TextCenter(props)
+TextNorm(props)
+ButtonSimple
+```
+
 ## Log styling
 
 `logBlackBG('Try this black background string');`
