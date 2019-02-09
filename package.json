@@ -1,6 +1,6 @@
 {
   "name": "mokam",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "React Native Utils. MOKAM Mokadung",
   "main": "index.js",
   "scripts": {
