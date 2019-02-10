@@ -9,6 +9,12 @@ export const getWHFullPer = (w, h) => ({
   width: srInt((width * w) / 100),
   height: srInt((height * h) / 100)
 });
+const aspectRatio = height / width; // iPhone X : 2.1653, 16/9 : 1.78 (2 - 1.78 = 0.22)
+export const spaceVer = (h, w) => srInt((20 * (h / w - 1.78)) / 0.22);
+
+
+
+console.log(` Screen ${width} X ${height}, ar : ${aspectRatio}  sr : ${sr}`);
 
 /** style abstractions  */
 // <View style={{ ...full, ...centering, backgroundColor: '#BBB9' }}>
@@ -37,11 +43,3 @@ export function getSr(...args) {
 }
 // <Image style={{ ...boxSize(30) }} >
 export const boxSize = sz => ({ width: sz * sr, height: sz * sr });
-
-// Additional top distance in Long screen. Max 20 when the ratio is 2:1.
-let aspectRatio = height / width; // iPhone X : 2.1653, 16/9 : 1.78 (2 - 1.78 = 0.22)
-aspectRatio = aspectRatio < 1.78 ? 1.78 : aspectRatio;
-aspectRatio = aspectRatio > 2 ? 2 : aspectRatio;
-export const spaceVer = srInt((20 * (aspectRatio - 1.78)) / 0.22);
-
-console.log(` Screen ${width} X ${height}, ar : ${aspectRatio}  sr : ${sr}`);

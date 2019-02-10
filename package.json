@@ -1,10 +1,10 @@
 {
   "name": "mokam",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "React Native Utils. MOKAM Mokadung",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "react-native",
@@ -22,7 +22,8 @@
   },
   "devDependencies": {
     "eslint": "5.9.0",
-    "eslint-config-airbnb": "17.1.0"
+    "eslint-config-airbnb": "17.1.0",
+    "jest": "^24.1.0"
   },
   "peerDependencies": {
     "react-native": ">=0.47"
