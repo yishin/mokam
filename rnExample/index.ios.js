@@ -6,14 +6,11 @@
 
 import React, { Component } from 'react';
 import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
+  AppRegistry, YellowBox, StyleSheet, Text, View,
 } from 'react-native';
-import RNMokam, { keymap, convertToJsonFromAndroid } from 'mokam';
+import RNMokam, { spaceVer, keymap, convertToJsonFromAndroid } from 'mokam';
 
-const strr =  `
+const strr = `
 'atom-text-editor':
   'ctrl-shift-left': 'pane:move-item-left'
   'ctrl-shift-right': 'pane:move-item-right'
@@ -24,29 +21,51 @@ const strr =  `
 `;
 
 const andrStrObj = {
-  	"resources": {
-  		"string": [
+  	resources: {
+  		string: [
   			{
-  				"_name": "app_name",
-  				"__text": "MOIN"
+  				_name: 'app_name',
+  				__text: 'MOIN',
   			},
   			{
-  				"_name": "update",
-  				"__text": "업데이트"
+  				_name: 'update',
+  				__text: '업데이트',
   			},
   			{
-  				"_name": "update_is_necessary",
-  				"__text": "현 업데이트는 필수입니다. 업데이트 후 사용해주세요."
+  				_name: 'update_is_necessary',
+  				__text: '현 업데이트는 필수입니다. 업데이트 후 사용해주세요.',
   			},
   			{
-  				"_name": "later",
-  				"__text": "다음에 하기"
-  			}
-      ],
-    }
-  };
+  				_name: 'later',
+  				__text: '다음에 하기',
+  			},
+    ],
+  },
+};
 
+/**
+ *
+ */
 export default class rnExample extends Component {
+  constructor(props) {
+    super(props);
+    this.testCode();
+  }
+
+  testCode() {
+    console.log(' space ', spaceVer);
+  }
+
+  componentWillMount() {
+    YellowBox.ignoreWarnings([
+      'Warning: isMounted(...) is deprecated',
+      'Module RCTImageLoader',
+      'Remote debugger',
+      'ListView ',
+      'Required dispatch',
+    ]);
+  }
+
   render() {
     console.log(strr);
     return (
@@ -58,12 +77,13 @@ export default class rnExample extends Component {
           To get started, edit index.ios.js
         </Text>
         <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
+          Press Cmd+R to reload,
+          {'\n'}
           Cmd+D or shake for dev menu
         </Text>
         <Text
           onPress={() => this.convertTest()}
-          >
+        >
             Convert Test
         </Text>
       </View>
