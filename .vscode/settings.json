@@ -1,0 +1,8 @@
+{
+  "eslint.enable": true,
+  "eslint.autoFixOnSave": true,
+  "editor.formatOnSave": false,
+  "editor.tabSize": 2,
+  "editor.fontSize": 11,
+  "editor.wordWrapColumn": 100
+}

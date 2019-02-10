@@ -1,7 +1,7 @@
 {
   "name": "mokam",
-  "version": "0.2.2",
-  "description": "MOKAM Mokadung",
+  "version": "0.3.3",
+  "description": "React Native Utils. MOKAM Mokadung",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,8 +11,19 @@
     "react",
     "mokadung"
   ],
-  "author": "mokadung",
+  "author": {
+    "name": "JJ Moon",
+    "email": "mokadung@gmail.com"
+  },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JJMoon/mokam"
+  },
+  "devDependencies": {
+    "eslint": "5.9.0",
+    "eslint-config-airbnb": "17.1.0"
+  },
   "peerDependencies": {
     "react-native": ">=0.47"
   }

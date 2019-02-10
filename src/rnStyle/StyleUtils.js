@@ -17,8 +17,10 @@ console.log(` Screen ${width} X ${height}, ar : ${aspectRatio}  sr : ${sr}`);
 // <View style={{ ...full, ...centering, backgroundColor: '#BBB9' }}>
 export const centering = { justifyContent: "center", alignItems: "center" };
 export const textCenter = { textAlign: "center" };
+export const flexRow = { flexDirection: 'row' };
 // <View style={{ flexDirection: 'row', ...bottomLine('#DDD4') }}>
 export const bottomLine = col => ({ borderBottomWidth: 1, borderColor: col });
+export const border = col => ({ borderWidth: 1, borderColor: col });
 
 /** Drop to Integer */
 export const srInt = dim => parseInt(dim * sr);
