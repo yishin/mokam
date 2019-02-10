@@ -9,7 +9,9 @@ export const getWHFullPer = (w, h) => ({
   width: srInt((width * w) / 100),
   height: srInt((height * h) / 100)
 });
-console.log(` Screen ${width} X ${height},  sr : ${sr}`);
+const aspectRatio = height / width; // iPhone X : 2.1653, 16/9 : 1.78 (2 - 1.78 = 0.22)
+export const spaceVer = srInt((20 * (aspectRatio - 1.78)) / 0.22);
+console.log(` Screen ${width} X ${height}, ar : ${aspectRatio}  sr : ${sr}`);
 
 /** style abstractions  */
 // <View style={{ ...full, ...centering, backgroundColor: '#BBB9' }}>
