@@ -28,7 +28,21 @@ export function getSrInt(...args) {
 }
 
 // Utils
-// <View style={{ ...full, backgroundColor: '#BBB9' }}>
+
+// Bottom Radius with 2 column..
+export const botRad = (isBottom, leftR, rightR) => {
+  // borderBottomRightRadius, borderTopRightRadius
+  const ky = isBottom ? 'borderBottom' : 'borderTop';
+  return { [`${ky}LeftRadius`]: leftR, [`${ky}RightRadius`]: rightR };
+};
+
+export const botRads = (isBottom, num, rad) => {
+  const rArr = (new Array(num)).map(() => null);
+  rArr[0] = botRad(isBottom, rad, 0);
+  rArr[num - 1] = botRad(isBottom, 0, rad);
+  return rArr;
+};
+
 export const full = { flex: 1, width: "100%", height: "100%" };
 // apply screen ratio :: getSr(30), getSr(20, 10, 15, 25)
 export function getSr(...args) {
