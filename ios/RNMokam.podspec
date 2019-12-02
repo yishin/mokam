@@ -1,9 +1,9 @@
 
 Pod::Spec.new do |s|
   s.name         = "RNMokam"
-  s.version      = "1.0.0"
+  s.version      = "0.3.6"
   s.summary      = "RNMokam"
-  s.description  = ""
+  s.description  = "RNMokam"
   s.homepage     = "https://github.com/yishin/mokam"
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
